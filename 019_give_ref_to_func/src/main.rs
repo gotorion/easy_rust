@@ -20,6 +20,15 @@ fn take_country_and_change_it(mut country: String) -> () {
     country.push_str(", it's a beautiful country too.");
     println!("{}", country);
 }
+fn return_num() -> i32 {
+    let num = 10;
+    num
+}
+
+#[test]
+fn test_return_num() {
+    assert_eq!(return_num(), 10);
+}
 fn main() {
     let country = String::from("China");
     print_country(country);
